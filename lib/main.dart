@@ -104,7 +104,6 @@ class PageAccueil extends StatelessWidget {
   double calculateMoyenne(List<Etudiant> etudiants) {
     double total = 0.0;
     for (var etudiant in etudiants) {
-      var total = 0;
       // dixieme erreure : cast incorrect de double en int
       // solution : utiliser la variable total existante et le type double
       total += etudiant.moyenne as int;
