@@ -106,7 +106,7 @@ class PageAccueil extends StatelessWidget {
     for (var etudiant in etudiants) {
       // dixieme erreure : cast incorrect de double en int
       // solution : utiliser la variable total existante et le type double
-      total += etudiant.moyenne as int;
+      total += etudiant.moyenne;
     }
     return total / etudiants.length;
   }
